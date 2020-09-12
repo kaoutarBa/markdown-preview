@@ -1,10 +1,10 @@
 import React from 'react';
-import CodeArea from "./components/CodeArea.js";
+import MarkdownToHtml from "./components/MarkdownToHtml.js";
 
 function App() {
   return (
     <div>
-      <CodeArea />
+      <MarkdownToHtml />
     </div>
     
   )

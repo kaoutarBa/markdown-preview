@@ -78,10 +78,11 @@ justify-self:center;
 const Header=styled.div`
 grid-column:1/3;
 grid-row:1/2;
-min-width:102%;
+width:100%;
 position:fixed;
 height: 70px;
 top:0px;
+left:0px;
 border-bottom:1px solid #D5D5D5;
 background: rgba(229, 229, 229, 0.1);
 display:flex;

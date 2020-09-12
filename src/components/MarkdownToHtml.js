@@ -8,7 +8,7 @@ import {DragDropArea,
     Html,
     MkSection,
     HtmlSection,
-    Header} from "./styles.js";
+    Header} from "./MarkdownToHtml.styles.js";
 import markdown from "markdown-it";
 
 
@@ -17,7 +17,7 @@ const createMarkup = x =>{
     return {__html: md.render(x)};
 };
 
-const CodeArea = ()=> {
+const MarkdownToHtml = ()=> {
     const [value,setValue]= useState("## Hello World!");
 
     const handle = (e,color)=>{
@@ -78,4 +78,4 @@ const CodeArea = ()=> {
         );
     };
 
-export default CodeArea;    
+export default MarkdownToHtml;    
