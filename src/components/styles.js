@@ -1,42 +1,95 @@
-
-//import React from 'react';
 import styled from 'styled-components';
 
 
+const Container=styled.div`
+width:100%;
+height:100%;
+display:grid;
+grid-template-columns:50% 50%;
+grid-template-rows:15% 10% 75%;
+`;
+const Title=styled.div`
+font-size: 25px;
+font-family: sans-serif;
+font-weight: 600;
+color: #BB86FE;
+margin:auto;
+`;
+const P=styled.div`
+font-size: 12px;
+font-family: sans-serif;
+font-weight: 300;
+`;
+const Mk=styled.div`
+font-size: 20px;
+font-weight: 600;
+font-family: sans-serif;
+color: #C4BD20;
+`;
+const Html=styled.div`
+font-size: 20px;
+font-weight: 600;
+font-family: sans-serif;
+color: #71B33D;
+
+`;
+const MkSection=styled.div`
+grid-column:1/2;
+grid-row:2/3;
+margin-left:40px;
+
+`;
+
+const HtmlSection=styled.div`
+grid-column:2/3;
+grid-row:2/3;
+display:flex;
+flex-direction:column;
+align-items:flex-end;
+margin-right:40px;
+
+`;
+
 const DragDropArea= styled.textarea`
-height: 100%;
-width: 50%;
-position: fixed;
-z-index: 1;
-top: 0;
-overflow-x: hidden;
-padding-top: 20px;
-left: 0;
-background-color: azure ;
-outline-style: solid ;
-outline-color: ridge;
-
-
-
-`
-;
-
-
+outline:none;
+width: 550px;
+height: 446px;
+background: #f4fe865c;
+border: 1px solid rgba(196, 189, 32, 0.67);
+box-sizing: border-box;
+border-radius: 10px;
+grid-column:1/2;
+grid-row:3/4;
+justify-self:center;
+`;
 
 const StyledTransCode= styled.div`
-height: 100%;
-width: 50%;
-position: fixed;
-z-index: 1;
-top: 0;
-overflow-x: hidden;
-padding-top: 20px;
-right: 0;
-background-color: wheat;
-outline-style: solid ;
-outline-color: ridge;
+width: 550px;
+height: 446px;
+background: rgba(187, 254, 134, 0.24);
+border: 1px solid #5FAC23;
+box-sizing: border-box;
+border-radius: 10px;
+grid-column:2/3;
+grid-row:3/4;
+justify-self:center;
+`;
+
+const Header=styled.div`
+grid-column:1/3;
+grid-row:1/2;
+min-width:102%;
+position:fixed;
+height: 70px;
+top:0px;
+border-bottom:1px solid #D5D5D5;
+background: rgba(229, 229, 229, 0.1);
+display:flex;
 
 `;
 
 
-export {DragDropArea,StyledTransCode};
+export {DragDropArea,
+    MkSection,
+    HtmlSection,
+    StyledTransCode,Container,Title,Mk,Html,Header,P};
