@@ -18,7 +18,7 @@ const createMarkup = x =>{
 };
 
 const CodeArea = ()=> {
-    const [value,setValue]= useState("## Hello Word!");
+    const [value,setValue]= useState("## Hello World!");
 
     const handle = (e,color)=>{
         e.stopPropagation();
