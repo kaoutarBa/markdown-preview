@@ -1,4 +1,4 @@
-#  MarkDown To HTML
+#  Markdown To HTML
 
 ```
 to run this project :
@@ -10,3 +10,6 @@ to run this project :
 ```
    you can either write down or drag and drop your file . 
 ```
+So here is a preview of this app : 
+
+![preview](src/preview/mkd.svg)
