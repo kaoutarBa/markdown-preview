@@ -38,8 +38,6 @@ const MarkdownToHtml = ()=> {
             reader.readAsText(file);
         };
     };
-
-
     const handleDrop= e => {
         handle(e,"#f4fe865c");
         let files = e.dataTransfer.files;
@@ -71,7 +69,7 @@ const MarkdownToHtml = ()=> {
             onDrop={handleDrop} 
             onDragOver={handleDragOver} 
             onDragLeave={handleDragLeave}/>
-            <StyledTransCode >
+            <StyledTransCode className={"code"} >
                 <div dangerouslySetInnerHTML={createMarkup(value)} />
             </StyledTransCode>
         </Container>
